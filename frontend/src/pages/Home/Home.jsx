@@ -3,6 +3,7 @@ import './Home.css'
 import Header from '../../components/Header/Header'
 import ExploreMenu from '../../components/ExporeMenu/ExploreMenu'
 import { useState } from 'react'
+import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
     <div>
       <Header/>
       <ExploreMenu category={category} setCategory={setCategory}/>
+      <FoodDisplay category={category}/>
     </div>
   )
 }
